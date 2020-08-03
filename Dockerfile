@@ -13,8 +13,8 @@ From rootproject/root-ubuntu16
 ENV PYTHONPATH ${PYTHONPATH}:/usr/local/lib/root/
 
 #Add python file
-ADD <python_file.py>
+ADD root_file_reader.py JetTree_mc_0p4_all.root
 
 #CMD tells docker to execute the command when the image loads
-CMD [ "python", "./<python_file.py>"]
+CMD [ "python", "./root_file_reader.py -i JetTree_mc_0p4_all.root"]
 
